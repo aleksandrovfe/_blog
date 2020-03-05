@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Posts page</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header" id="home">
+      <div class="row no-gutters">
+        <div class="header__block">
+          <div class="header__sign">BlogWorld</div>
+        </div>
+        <div class="header__block">
+          <div class="list-links">
+            <button class="list-links__add-post">New post</button>
+            <a class="list-links__link" href="../index.html">Home</a>
+            <a class="list-links__link" href="../index.html">Portfolio</a>
+            <a class="list-links__link" href="../SecondPage/index2.html">Blog</a>
+            <a class="list-links__link" href="../ThirdPage/index3.html">Pages</a>
+            <a class="list-links__link" href="../index.html">About</a>
+            <a class="list-links__link" href="../index.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header><!-- .header-->
+    <div class="form">
+      <form class="form__content">
+        <label class="form__label" for="author">Post's author</label>
+        <input class="form__input" type="text" placeholder="Author..." id="author" required="required" maxlength="40">
+        <label class="form__label">Choose your gender</label>
+        <div>
+          <label class="form__label--choose"><input type="radio" name="sex" value="male" id="male" checked="checked"> Male</label>
+          <label class="form__label--choose"><input type="radio" name="sex" value="female" id="female"> Female</label>
+          <label class="form__label--choose"><input type="radio" name="sex" value="other" id="other"> Other</label>
+        </div>
+        <label class="form__label" for="title">Post's title</label>
+        <input class="form__input" type="text" placeholder="Title..." id="title" maxlength="20">
+        <div class="form__input--add-info" title="Maximum length 20 characters, first letter must be uppercase, only latin letters are allowed, the last character can be '!', '?', ':', '-', '.',"></div>
+        <label class="form__label--choose" for="addAudio">Add audio <input type="checkbox" value="audio" name="addAudio" id="addAudio"></label>
+        <label class="form__label" for="text">Post's description</label>
+        <textarea class="form__input form__input--textarea" id="text" placeholder="two tildes(~~) create a new paragraph" required="required"></textarea>
+        <label class="form__label">Add media</label>
+        <div>
+          <label class="form__label--choose"><input type="radio" name="media" value="video" id="mediaVideo"> Video</label>
+          <label class="form__label--choose"><input type="radio" name="media" value="image" id="mediaImage" checked="checked"> Image</label>
+          <label class="form__label--choose"><input type="radio" name="media" value="no" id="no"> No</label>
+        </div>
+        <label class="form__label" for="quote">Post's quote</label>
+        <textarea class="form__input form__input--textarea" id="quote"></textarea>
+        <label class="form__label">Choose type of post</label>
+        <div>
+          <label class="form__label--choose"><input type="radio" name="postType" value="image" id="image" checked="checked"> Photo</label>
+          <label class="form__label--choose"><input type="radio" name="postType" value="audio" id="audio"> Audio</label>
+          <label class="form__label--choose"><input type="radio" name="postType" value="article" id="article"> Text</label>
+          <label class="form__label--choose"><input type="radio" name="postType" value="video" id="video"> Video</label>
+        </div>
+        <button class="form__post">Post</button>
+      </form>
+      <button class="form__close">&#10008;</button>
+    </div>
+    <div class="form__success">
+      <p class="form__success-message">Post was published</p>
+    </div>
+    <main class="content">
+      <div class="row no-gutters">
+        <section class="content__heading">
+          <h2 class="content__title">Blog</h2>
+          <figure class="content__figure"></figure>
+        </section>
+        <div class="content__search">
+          <input class="search" id="searchByAuthor" type="text" placeholder="Search by author">
+          <label class="search__controller" for="searchByAuthor"></label>
+          <input class="search" id="searchByTitle" type="text" placeholder="Search by title">
+          <label class="search__controller-title" for="searchByTitle"></label>
+          <button id="deleteAllPosts" class="btn btn-dark">Delete all posts</button>
+        </div>
+        <div class="post">
+        </div>
+        <div class="content__btn">
+          <button class="btn">Read more</button>
+        </div>
+      </div>
+    </main><!-- .content -->
+    <footer class="footer">
+      <div class="footer-links">
+        <div class="footer-links__icon1"></div>
+        <div class="footer-links__icon2"></div>
+        <div class="footer-links__icon3"></div>
+      </div>
+      <h2 class="footer__sign">BlogWorld</h2>
+      <p class="footer__rights">©2019 All Rights Reserved.</p>
+    </footer><!-- .footer -->
+  </div><!-- .wrapper -->
+  <script src="./js/loadData.js"></script>
+  <script src="./js/workWithForm.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/jQueryData.js"></script>
+  <script src="./js/jQuery.js"></script>
+</body>
+</html>
+

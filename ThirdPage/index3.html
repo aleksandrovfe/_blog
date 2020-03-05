@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Article page</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header" id="home">
+      <div class="row no-gutters">
+        <div class="header__block">
+          <div class="header__sign">BlogWorld</div>
+        </div>
+        <div class="header__block">
+          <div class="list-links">
+            <button class="list-links__add-post">New post</button>
+            <a class="list-links__link" href="../index.html">Home</a>
+            <a class="list-links__link" href="../index.html">Portfolio</a>
+            <a class="list-links__link" href="./SecondPage/index2.html">Blog</a>
+            <a class="list-links__link" href="./ThirdPage/index3.html">Pages</a>
+            <a class="list-links__link" href="../index.html">About</a>
+            <a class="list-links__link" href="../index.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header><!-- .header-->
+    <div class="form">
+      <form class="form__content">
+        <label class="form__label" for="author">Post's author</label>
+        <input class="form__input" type="text" placeholder="Author..." id="author" required="required" maxlength="40">
+        <label class="form__label">Choose your gender</label>
+        <div>
+          <label class="form__label--choose"><input type="radio" name="sex" value="male" id="male" checked="checked"> Male</label>
+          <label class="form__label--choose"><input type="radio" name="sex" value="female" id="female"> Female</label>
+          <label class="form__label--choose"><input type="radio" name="sex" value="other" id="other"> Other</label>
+        </div>
+        <label class="form__label" for="title">Post's title</label>
+        <input class="form__input" type="text" placeholder="Title..." id="title" maxlength="20">
+        <div class="form__input--add-info" title="Maximum length 20 characters, first letter must be uppercase, only latin letters are allowed, the last character can be '!', '?', ':', '-', '.',"></div>
+        <label class="form__label--choose" for="addAudio">Add audio <input type="checkbox" value="audio" name="addAudio" id="addAudio"></label>
+        <label class="form__label" for="text">Post's description</label>
+        <textarea class="form__input form__input--textarea" id="text" placeholder="two tildes(~~) create a new paragraph" required="required"></textarea>
+        <label class="form__label">Add media</label>
+        <div>
+          <label class="form__label--choose"><input type="radio" name="media" value="video" id="mediaVideo"> Video</label>
+          <label class="form__label--choose"><input type="radio" name="media" value="image" id="mediaImage" checked="checked"> Image</label>
+          <label class="form__label--choose"><input type="radio" name="media" value="no" id="no"> No</label>
+        </div>
+        <label class="form__label" for="quote">Post's quote</label>
+        <textarea class="form__input form__input--textarea" id="quote"></textarea>
+        <label class="form__label">Choose type of post</label>
+        <div>
+          <label class="form__label--choose"><input type="radio" name="postType" value="image" id="image" checked="checked"> Photo</label>
+          <label class="form__label--choose"><input type="radio" name="postType" value="audio" id="audio"> Audio</label>
+          <label class="form__label--choose"><input type="radio" name="postType" value="article" id="article"> Text</label>
+          <label class="form__label--choose"><input type="radio" name="postType" value="video" id="video"> Video</label>
+        </div>
+        <button class="form__post">Post</button>
+      </form>
+      <button class="form__close">&#10008;</button>
+    </div>
+    <div class="form__success">
+      <p class="form__success-message">Post was published</p>
+    </div>
+    <main class="content">
+      <div class="row no-gutters">
+        <div class="row no-gutters">
+
+          <div class="post">
+            <!-- this part was made up with js -->
+            <div class="post__review">
+              <h3 class="post__title">Reviews</h3>
+              <!-- this part was made up with js -->
+            </div>
+            <div class="post__btn-position">
+              <button class="post__btn">More comments</button>
+            </div>
+          </div>
+          <aside class="aside">
+            <div class="aside__latest-posts">
+              <h3 class="aside__title">Latest posts</h3>
+              <hr class="aside__hr">
+              <div class="aside__posts">
+                <!-- this part was made up with js -->
+              </div>
+              <button class="aside__btn"><a class="aside__btn--link" href="./index2.html">More posts</a></button>
+            </div>
+            <div class="aside__categories">
+              <h3 class="aside__title">Categories</h3>
+              <hr class="aside__hr">
+              <div class="aside__list-categories">
+                <input class="aside__toggle1" type="checkbox" name="categories" id="food">
+                <label class="aside__toogle-contriller" for="food">Restaurant food (3)</label>
+                <div class="aside__restaurant-food">
+                  <p class="aside__hidden-item">Asian</p>
+                  <p class="aside__hidden-item">African</p>
+                  <p class="aside__hidden-item">European</p>
+                </div>
+                <hr class="aside__hr">
+                <input class="aside__toggle2" type="checkbox" name="categories" id="travel">
+                <label class="aside__toogle-contriller" for="travel">Travel news (3)</label>
+                <div class="aside__travel-news">
+                  <p class="aside__hidden-item">Hiking</p>
+                  <p class="aside__hidden-item">Bicycle trip</p>
+                  <p class="aside__hidden-item">Mountains trip</p>
+                </div>
+                <hr class="aside__hr">
+                <input class="aside__toggle3" type="checkbox" name="categories" id="technology">
+                <label class="aside__toogle-contriller" for="technology">Modern technology (6)</label>
+                <div class="aside__modern-technology">
+                  <p class="aside__hidden-item">Cars</p>
+                  <p class="aside__hidden-item">Motorcycles</p>
+                  <p class="aside__hidden-item">Phones</p>
+                  <p class="aside__hidden-item">Laptops</p>
+                  <p class="aside__hidden-item">Tablets</p>
+                  <p class="aside__hidden-item">Quadrocopters</p>
+                </div>
+                <hr class="aside__hr">
+                <input class="aside__toggle4" type="checkbox" name="categories" id="product">
+                <label class="aside__toogle-contriller" for="product">Product (4)</label>
+                <div class="aside__product">
+                  <p class="aside__hidden-item">Bags</p>
+                  <p class="aside__hidden-item">Clothes</p>
+                  <p class="aside__hidden-item">Furniture</p>
+                  <p class="aside__hidden-item">Mirrors</p>
+                </div>
+                <hr class="aside__hr">
+                <input class="aside__toggle5" type="checkbox" name="categories" id="inspiration">
+                <label class="aside__toogle-contriller" for="inspiration">Inspiration (2)</label>
+                <div class="aside__inspiration">
+                  <p class="aside__hidden-item">Art</p>
+                  <p class="aside__hidden-item">Music</p>
+                </div>
+                <hr class="aside__hr">
+              </div>
+            </div>
+            <div class="aside__tags">
+              <h3 class="aside__title">Tags</h3>
+              <hr class="aside__hr">
+              <div class="aside__list-tags">
+                <!-- this part was made up with js -->
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main><!-- .content -->
+  </div><!-- .wrapper -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a class="footer-links__icon1" href="#"></a>
+      <a class="footer-links__icon2" href="#"></a>
+      <a class="footer-links__icon3" href="#"></a>
+    </div>
+    <h2 class="footer__sign">BlogWorld</h2>
+    <p class="footer__rights">©2019 All Rights Reserved.</p>
+  </footer><!-- .footer -->
+  <script src="./js/loadData.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/workWithForm.js"></script>
+</body>
+</html>

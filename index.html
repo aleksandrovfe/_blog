@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./FirstPage/css/style.css">
+  <title>Main page</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header" id="home">
+      <div class="row no-gutters">
+        <div class="header__block">
+          <div class="header__sign">BlogWorld</div>
+        </div>
+        <div class="header__block">
+          <div class="list-links">
+            <button class="list-links__add-post">New post</button>
+            <a class="list-links__link" href="index.html">Home</a>
+            <a class="list-links__link" href="#portfolio">Portfolio</a>
+            <a class="list-links__link" href="./SecondPage/index2.html">Blog</a>
+            <a class="list-links__link" href="./ThirdPage/index3.html">Pages</a>
+            <a class="list-links__link" href="#about">About</a>
+            <a class="list-links__link" href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="header__content">
+          <h1 class="header__heading">Ideas and perspectives you won’t <br/> find anywhere else.</h1>
+          <p class="header__text">BlogWorld taps into the brains of the world’s most insightful writers, thinkers, and <br/> storytellers to bring you the smartest takes on topics that matter. So whatever your <br/> interest, you can always find fresh thinking and unique perspectives.</p>
+          <button class="header__btn header__btn--dark">Explore</button>
+          <button class="header__btn header__btn--light">Learn more</button>
+        </div>
+      </div>
+    </header><!-- .header-->
+    <div class="form">
+      <form class="form__content">
+        <label class="form__label" for="author">Post's author</label>
+        <input class="form__input" type="text" placeholder="Author..." id="author" required="required" maxlength="40">
+        <label class="form__label">Choose your gender</label>
+        <div>
+          <label class="form__label--choose"><input type="radio" name="sex" value="male" id="male" checked="checked"> Male</label>
+          <label class="form__label--choose"><input type="radio" name="sex" value="female" id="female"> Female</label>
+          <label class="form__label--choose"><input type="radio" name="sex" value="other" id="other"> Other</label>
+        </div>
+        <label class="form__label" for="title">Post's title</label>
+        <input class="form__input" type="text" placeholder="Title..." id="title" maxlength="20">
+        <div class="form__input--add-info" title="Maximum length 20 characters, first letter must be uppercase, only latin letters are allowed, the last character can be '!', '?', ':', '-', '.',"></div>
+        <label class="form__label--choose" for="addAudio">Add audio <input type="checkbox" value="audio" name="addAudio" id="addAudio"></label>
+        <label class="form__label" for="text">Post's description</label>
+        <textarea class="form__input form__input--textarea" id="text" placeholder="two tildes(~~) create a new paragraph" required="required"></textarea>
+        <label class="form__label">Add media</label>
+        <div>
+          <label class="form__label--choose"><input type="radio" name="media" value="video" id="mediaVideo"> Video</label>
+          <label class="form__label--choose"><input type="radio" name="media" value="image" id="mediaImage" checked="checked"> Image</label>
+          <label class="form__label--choose"><input type="radio" name="media" value="no" id="no"> No</label>
+        </div>
+        <label class="form__label" for="quote">Post's quote</label>
+        <textarea class="form__input form__input--textarea" id="quote"></textarea>
+        <label class="form__label">Choose type of post</label>
+        <div>
+          <label class="form__label--choose"><input type="radio" name="postType" value="image" id="image" checked="checked"> Photo</label>
+          <label class="form__label--choose"><input type="radio" name="postType" value="audio" id="audio"> Audio</label>
+          <label class="form__label--choose"><input type="radio" name="postType" value="article" id="article"> Text</label>
+          <label class="form__label--choose"><input type="radio" name="postType" value="video" id="video"> Video</label>
+        </div>
+        <button class="form__post">Post</button>
+      </form>
+      <button class="form__close">&#10008;</button>
+    </div>
+    <div class="form__success">
+      <p class="form__success-message">Post was published</p>
+    </div>
+    <main class="content">
+      <div class="post-s"></div>
+      <div class="row no-gutters" id="main">
+
+        <section class="content__heading" id="about">
+          <h2 class="content__title">About us</h2>
+          <figure class="content__figure"></figure>
+          <p class="content__text">This is who we are - or at least who we strive to be…</p>
+        </section>
+        <section class="content__aside">
+          <!-- this part was made up with js -->
+        </section>
+        <section class="content__video">
+          <!-- this part was made up with js -->
+        </section>
+        <section class="content__heading">
+          <h2 class="content__title">Latest posts</h2>
+          <figure class="content__figure"></figure>
+          <p class="content__text">Information is a source of learning. But unless it is organized, <br/> processed and available to the right people</p>
+        </section>
+        <div class="content__posts-list">
+          <!-- this part was made up with js -->
+        </div>
+        <section class="content__heading" id="portfolio">
+          <h2 class="content__title">Latest portfolio</h2>
+          <figure class="content__figure"></figure>
+          <p class="content__text">Put there articles successfully special warrant submit agree <br/> what along then</p>
+        </section>
+        <div class="content__portfolio">
+          <!-- this part was made up with js -->
+        </div>
+        <div class="content__portfolio-buttons-move">
+          <button class="move-button1">&#x2227;</button>
+          <button class="move-button2">&#x2227;</button>
+        </div>
+        <div class="content__portfolio-button-works">
+          <button class="works-button">See all works</button>
+        </div>
+        <div class="content__testimonial">
+          <section class="content__testimonial-title">
+            <h2 class="content__title">Testimonials</h2>
+            <figure class="content__figure"></figure>
+          </section>
+          <button class="move-buttonn1">&#x2227;</button>
+            <div class="content__project-team">
+              <!-- this part was made up with js -->
+            </div>
+          <button class="move-buttonn2">&#x2227;</button>
+        </div>
+        <section class="content__heading" id="contact">
+          <h2 class="content__title">Contact us</h2>
+          <figure class="content__figure"></figure>
+          <p class="content__text">Put there articles successfully special warrant submit agree <br/> what along then</p>
+        </section>
+        <div class="social-links">
+          <div class="list-social-links">
+            <div class="list-social-links__icon1"></div>
+            <div class="list-social-links__icon2"></div>
+            <div class="list-social-links__icon3"></div>
+          </div>
+        </div>
+        <div class="content__contacts">
+          <section class="fact-finding-information">
+            <h2 class="fact-finding-information__heading">What will be next step?</h2>
+            <h4 class="fact-finding-information__sub-heading">1. We’ll prepare a proposal</h4>
+            <p class="fact-finding-information__text">Required scope, timeline and apr. price will be <br/> included if you provide us with detail information <br/> about a project.</p>
+            <h4 class="fact-finding-information__sub-heading">2. Together we discuss it</h4>
+            <p class="fact-finding-information__text">Let’s get acquainted and discuss all the possible <br/> variant and options. Google Hangouts or Skype <br/> usually wirks great.</p>
+            <h4 class="fact-finding-information__sub-heading">3. Let’s start building</h4>
+            <p class="fact-finding-information__text">When the contract is signed and all goals are set <br/> we can start the first sprint.</p>
+          </section>
+          <section class="contacts-form">
+            <div class="contacts-form__heading">
+              <div class="contacts-form__icon"></div>
+              <h4 class="contacts-form__title">Write us a few words about your project and we will prepare proposal for you <br/> within <b>24 hours</b></h4>
+            </div>
+            <div class="contacts-form__form">
+              <form class="contacts-form__left">
+                <label class="contacts-form__label" for="name">Your name</label>
+                <input class="contacts-form__input" type="text" id="name">
+                <label class="contacts-form__label"  for="email">Email</label>
+                <input class="contacts-form__input" type="email" id="email">
+                <div class="contacts-form__show-password"></div>
+                <label class="contacts-form__label"  for="password">Password</label>
+                <input class="contacts-form__input" type="password" id="password">
+                <button class="contacts-form__btn">Send message</button>
+                <p class="contacts-form__post-scriptum">If you need to have a DNA first, just contact us at <b>email@gmail.com</b></p>
+              </form>
+              <div id="map" class="contacts-form__right"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main><!-- .content -->
+    <footer class="footer">
+      <div class="footer-links">
+        <div class="footer-links__icon1"></div>
+        <div class="footer-links__icon2"></div>
+        <div class="footer-links__icon3"></div>
+      </div>
+      <h2 class="footer__sign">BlogWorld</h2>
+      <p class="footer__rights">©2019 All Rights Reserved.</p>
+      <a class="btn-to-top btn-to-top__link" href="#home">&#x2191;</a>
+    </footer><!-- .footer -->
+  </div><!-- .wrapper -->
+  <script src="./FirstPage/js/loadData.js"></script>
+  <script src="./FirstPage/js/app.js"></script>
+  <script src="./FirstPage/js/googleMapAPI.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3aHADtGocw7rI5SDh-sDEiHdMb_uu-oA&callback=initMap"
+  type="text/javascript"></script>
+  <script src="./FirstPage/js/slider.js"></script>
+  <script src="./FirstPage/js/workWithForm.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+@import './normalize';
+@import './reset';
+//bootstrap
+@import './bootstrap-override';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+// @import '../'
+//others
+@import './variables';
+@import './mixins';
+@import './global';
+@import './color-matrix';
+@import './extends';
+@import './style';
